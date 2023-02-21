@@ -1,0 +1,11 @@
+@mixin flexPosition($flexProperties, $location, $align: '') {
+    display: $flexProperties;
+    justify-content: $location;
+    align-items: $align;
+}
+
+@mixin blockPosition($blockProperties, $location, $align: '') {
+    display: $blockProperties;
+    text-align: $location;
+    align-items: $align;
+}

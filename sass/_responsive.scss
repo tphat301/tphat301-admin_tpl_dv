@@ -1,0 +1,10 @@
+@media (max-width: 375px) {
+    .content {
+        min-width: 354px !important;
+        padding: 20px 10px !important;
+    }
+    .login-page .inputEmail3,
+    .login-page .inputPassword3 {
+        font-size: 14px;
+    }
+}

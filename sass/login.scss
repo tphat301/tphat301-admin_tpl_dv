@@ -1,0 +1,123 @@
+@import './variables';
+@import './includes';
+@import './mixins';
+
+body {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    height: 100vh;
+}
+
+.login-page {
+    background: $backgroundGradientMain;
+    @include flexPosition(flex, center, center);
+    .loading {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+        &_pre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        &_snipper {
+            width: 40px;
+            height: 40px;
+            border: 4px #ddd solid;
+            border-top: 4px #2e93e6 solid;
+            border-radius: 50%;
+            animation: sp-anime 0.8s infinite linear;
+        }
+        @keyframes sp-anime {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .content {
+        min-width: 400px;
+        padding: 30px 20px;
+        background-color: $whiteColor;
+        border-radius: 8px;
+        animation: slideShowFormLogin 1s ease-in-out;
+    }
+
+    .login-view-web {
+        position: absolute;
+        background-color: $backgroundHeaderLoginColor !important;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        text-align: center;
+        color: $whiteColor;
+        padding: 0.5rem 0.5rem;
+        font-size: 13px !important;
+        margin: auto !important;
+    }
+
+    .login-view-web a {
+        opacity: 0.8;
+        color: $whiteColor;
+        text-decoration: none;
+    }
+
+    .login-copyright {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+        font-size: 13px !important;
+    }
+    .inputEmail3,
+    .inputPassword3 {
+        min-width: 90px;
+        font-size: 16px;
+    }
+
+    .btn-login {
+        display: block;
+        width: 100%;
+        color: $whiteColor;
+        background: $backgroundGradientMain;
+        transition: all 0.25s ease-in;
+        border: none;
+        outline: none;
+        padding: 8px 0;
+        border-radius: 6px;
+    }
+
+    .btn-login:hover {
+        background: $noBackgroundGradientMain;
+    }
+
+    .box-forgot-password {
+        @include blockPosition(block, center);
+        margin-top: 8px;
+    }
+
+    .link-forgot-password {
+        text-decoration: none;
+        color: $blackColor;
+    }
+}
+
+@keyframes slideShowFormLogin {
+    from {
+        opacity: 0;
+        transform: translateY(-450px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@import './responsive';

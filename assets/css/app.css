@@ -164,4 +164,18 @@
   font-weight: bold;
 }
 
-/*# sourceMappingURL=dashboard.css.map */
+.search {
+  margin-right: 10px;
+}
+
+th, tr {
+  text-align: center;
+}
+
+#check-handle {
+  display: inline-block;
+  width: 200px;
+  margin-right: 12px;
+}
+
+/*# sourceMappingURL=app.css.map */

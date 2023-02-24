@@ -9,7 +9,7 @@
     <link href="assets/images/logo_title.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
 </head>
 
 <body>
@@ -50,7 +50,7 @@
                                         <a href="" class="link_manager_product">Danh mục cấp 4</a>
                                     </li>
                                     <li class="item_manager_product">
-                                        <a href="" class="link_manager_product">Sản phẩm</a>
+                                        <a href="?view=product" class="link_manager_product">Sản phẩm</a>
                                     </li>
                                 </ul>
                             </li>

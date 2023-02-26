@@ -276,12 +276,10 @@
 
                 <!-- CONTENT -->
                 <div class="content">
-                    <div class="wrap-content">
-                        <?php
-                        $view = isset($_GET['view']) ? $_GET['view'] : 'dashboard';
-                        require "views/{$view}.php";
-                        ?>
-                    </div>
+                    <?php
+                    $view = isset($_GET['view']) ? $_GET['view'] : 'dashboard';
+                    require "views/{$view}.php";
+                    ?>
                 </div>
             </div>
             <!-- END CONTENT -->
@@ -299,7 +297,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 

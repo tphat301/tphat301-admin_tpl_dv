@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    /*
+    **
+    ** Click active sidebar line
+    **
+    */ 
+
     let iconArrow = $('.manager_product');
     iconArrow.click(function (e) {
         e.preventDefault();
